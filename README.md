@@ -62,29 +62,29 @@ Ao longo deste curso estou desenvolvendo conhecimentos para:
 
 ## Fundamentos
 
-- 📂 Seção 01 - Introdução
-- 📂 Seção 02 - Conceitos de Programação
-- 📂 Seção 03 - Introdução à Linguagem Java
-- 📂 Seção 04 - Estrutura Sequencial
-- 📂 Seção 05 - Estrutura Condicional
-- 📂 Seção 06 - Estruturas Repetitivas
-- 📂 Seção 07 - Outros Tópicos Básicos sobre Java
+- 📂 01 - Introdução
+- 📂 02 - Conceitos de Programação
+- 📂 03 - Introdução à Linguagem Java
+- 📂 04 - Estrutura Sequencial
+- 📂 05 - Estrutura Condicional
+- 📂 06 - Estruturas Repetitivas
+- 📂 07 - Outros Tópicos Básicos sobre Java
 
 ---
 
 ## Programação Orientada a Objetos
 
-- 📂 Seção 08 - Introdução à Programação Orientada a Objetos
-- 📂 Seção 09 - Construtores, palavra this, sobrecarga e encapsulamento
-- 📂 Seção 10 - Comportamento de memória, Arrays e Listas
-- 📂 Seção 11 - Tópicos especiais em Java (Data e Hora)
-- 📂 Seção 12 - Enumerações e Composição
-- 📂 Seção 13 - Herança e Polimorfismo
-- 📂 Seção 14 - Tratamento de Exceções
-- 📂 Seção 15 - Trabalhando com Arquivos
-- 📂 Seção 16 - Interfaces
-- 📂 Seção 17 - Generics, Set e Map
-- 📂 Seção 18 - Programação Funcional e Expressões Lambda
+- 📂 08 - Introdução à Programação Orientada a Objetos
+- 📂 09 - Construtores, palavra this, sobrecarga e encapsulamento
+- 📂 10 - Comportamento de memória, Arrays e Listas
+- 📂 11 - Tópicos especiais em Java (Data e Hora)
+- 📂 12 - Enumerações e Composição
+- 📂 13 - Herança e Polimorfismo
+- 📂 14 - Tratamento de Exceções
+- 📂 15 - Trabalhando com Arquivos
+- 📂 16 - Interfaces
+- 📂 17 - Generics, Set e Map
+- 📂 18 - Programação Funcional e Expressões Lambda
 
 ---
 
