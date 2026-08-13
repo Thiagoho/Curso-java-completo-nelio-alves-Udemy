@@ -4,7 +4,7 @@ public class Account { // conta
 	
 	private Integer number; // numero
 	private String holder; // titular
-	protected Double balance; // equilibrio
+	protected Double balance; // saldo
 	
 	public Account() {
 		
