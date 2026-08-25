@@ -19,7 +19,7 @@ public class SavingsAccount extends Account { // Savings -> Poupança
 		this.interesRate = interesRate;
 	}
 
-	// Aqui estamos somando balance, depois multiplicando [balance * interesRate], estamos atualizando o 'balance'
+	// Aqui estamos somando balance, depois multiplicando [balance * interesRate].
 	public void updateBalance(int amount) {
 		balance += balance * interesRate;
 	}
