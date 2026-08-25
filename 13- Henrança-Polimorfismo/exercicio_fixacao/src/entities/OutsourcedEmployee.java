@@ -28,7 +28,7 @@ public class OutsourcedEmployee extends Employee { // Funcionario Terceirizado
 
 	// Aqui estamos resolvendo o funcionario terceirizado ainda recebem um bônus correspondente a 110% de sua despesa aadicional.
 	@Override
-	public double payment() { // Pagamento + chance adicional * 110%
+	public double payment() { // Pagamento + additionalchance * 110%
 		return super.payment() + additionalCharce * 1.1;
 	}
 }
