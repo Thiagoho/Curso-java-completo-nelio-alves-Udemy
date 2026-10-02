@@ -1,12 +1,10 @@
 package application;
 
-import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 import java.util.Locale;
 import java.util.Scanner;
 
-import model.entities.CarRental;
-import model.entities.Vehicle;
+import model.service.BrazilTaxService;
 
 public class Program {
 
@@ -16,7 +14,7 @@ public class Program {
 		Scanner sc = new Scanner(System.in);
 		
 		DateTimeFormatter fmt = DateTimeFormatter.ofPattern("dd/MM/yyyy HH:mm");
-		
+	/*	
 		System.out.println("Enter the rental details:"); // Entre com os dados do aluguel
 		
 		System.out.print("Car model: "); // Modelo do carro
@@ -28,7 +26,10 @@ public class Program {
 		System.out.print("Return (dd/MM/yyyy HH:mm): "); // Retorno 
 		LocalDateTime finish = LocalDateTime.parse(sc.nextLine(), fmt);
 		
-		CarRental cr = new CarRental(start, finish, new Vehicle(carModel)); // aqui new vehicle(model), passando um argumento da class Veicle 
+		CarRental cr = new CarRental(start, finish, new Vehicle(carModel)); // aqui new vehicle(model), passando um argumento da class Veicle
+		*/
+		BrazilTaxService bts = new BrazilTaxService();
+		System.out.println(bts.tax(390.0));
 		sc.close();
 	}
 
