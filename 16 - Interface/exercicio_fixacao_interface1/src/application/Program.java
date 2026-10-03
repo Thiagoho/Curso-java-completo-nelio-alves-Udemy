@@ -1,6 +1,5 @@
 package application;
 
-import java.text.Format;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 import java.util.Locale;
@@ -10,6 +9,7 @@ import model.entities.CarRental;
 import model.entities.Vehicle;
 import model.service.BrazilTaxService;
 import model.service.RentalService;
+
 
 public class Program {
 
@@ -41,7 +41,7 @@ public class Program {
 
 		// Vamos distanciar o RentalServicer aquj
 
-		RentalService rs = new RentalService(pricePerHour, pricePerDay, new BrazilTaxService()); // Aqui add a dependencia do BrazilTaxService.
+		RentalService rs = new RentalService(pricePerHour, pricePerDay, new BrazilTaxService()); // Aqui add a dependencia do BrazilTaxService. 
 		// Aqui agora estamos chamando o rs --> RentalService
 		 // esse processInvoice esta distanciando os dados fisico da minha public void precessInvoice ele esta na class -> RentalService
 		rs.proceesInvoice(cr);

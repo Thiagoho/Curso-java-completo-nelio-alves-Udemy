@@ -10,11 +10,11 @@ public class RentalService {
 	private Double pricePerDay;
 	
 	// Trazendo a compusição
-	private BrazilTaxService bts;
+	private TaxService bts; // Trocamos para de BrazilTaxService para TaxService
 	
 // aqui não posso usar o construtor padrão quero obrigatar ele usar o construtor com argumento.
 
-	public RentalService(Double pricePerHour, Double pricePerDay, BrazilTaxService bts) {
+	public RentalService(Double pricePerHour, Double pricePerDay, TaxService bts) {
 
 		this.pricePerHour = pricePerHour;
 		this.pricePerDay = pricePerDay;
