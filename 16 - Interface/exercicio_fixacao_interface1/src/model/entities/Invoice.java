@@ -31,7 +31,7 @@ public class Invoice { // fatura
 	// Aqui uso o padrão do get
 	// Uso o get porque no futura quiser mudar oa lógica já esta ponto aqui.
 	public Double getTotalPayment() { // Pagamento total
-		return getBasicPayment() - getTax();
+		return getBasicPayment() + getTax(); // aqui tivemos que trocar para + o pagamento total somar correto. 
 	}
 
 }

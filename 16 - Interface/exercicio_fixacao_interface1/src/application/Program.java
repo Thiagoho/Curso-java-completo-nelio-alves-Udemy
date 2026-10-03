@@ -1,5 +1,6 @@
 package application;
 
+import java.text.Format;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 import java.util.Locale;
@@ -33,9 +34,9 @@ public class Program {
 		CarRental cr = new CarRental(start, finish, new Vehicle(carModel)); // aqui new vehicle(model), passando um
 																			// argumento da class Veicle
 
-		System.out.println("Enter the hourly rate: "); // Entre com o preço por hora:
+		System.out.print("Enter the hourly rate: "); // Entre com o preço por hora:
 		double pricePerHour = sc.nextDouble();
-		System.out.println("Enter the price per day: "); // Entre com o preço por dia;
+		System.out.print("Enter the price per day: "); // Entre com o preço por dia;
 		double pricePerDay = sc.nextDouble();
 
 		// Vamos distanciar o RentalServicer aquj
@@ -46,9 +47,9 @@ public class Program {
 		rs.proceesInvoice(cr);
 		System.out.println("\t\tFatura:");
 		// Aqui estamo ligando as tables RentalService -> Invoice -> getBasicPayment 
-		System.out.println("basic payment: "+ cr.getInvoice().getBasicPayment()); // Pagamento basico: 
-		System.out.println("Tax: " + cr.getInvoice().getTax()); // Imposto
-		System.out.println("full payment: " + cr.getInvoice().getTotalPayment()); // pagamento total
+		System.out.println("basic payment: "+ String.format("%.2f", cr.getInvoice().getBasicPayment())); // Pagamento basico: 
+		System.out.println("Tax: " + String.format("%.2f", cr.getInvoice().getTax())); // Imposto
+		System.out.println("full payment: " + String.format("%.2f", cr.getInvoice().getTotalPayment())); // pagamento total
 		sc.close();
 	}
 
