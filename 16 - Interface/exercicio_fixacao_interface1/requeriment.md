@@ -10,3 +10,4 @@ service.processInvoice(cr);
 		- pricePerDay: Double										 + tax(amout: Double): Double
 	----------------------------
 	+ processInvoice(carRental:CarRental): void
+----------------------------------------------------------------------------------------------------

@@ -40,7 +40,7 @@ public class Program {
 		double pricePerDay = sc.nextDouble();
 
 		// Vamos distanciar o RentalServicer aquj
-
+																		// [1] injeção de dependencia.
 		RentalService rs = new RentalService(pricePerHour, pricePerDay, new BrazilTaxService()); // Aqui add a dependencia do BrazilTaxService. 
 		// Aqui agora estamos chamando o rs --> RentalService
 		 // esse processInvoice esta distanciando os dados fisico da minha public void precessInvoice ele esta na class -> RentalService
