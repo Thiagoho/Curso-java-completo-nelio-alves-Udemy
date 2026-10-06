@@ -10,18 +10,20 @@ public class Contract {
 	private Double tatolValue;
 
 	// Representa a associação "-installment" do diagram UML
-	
-	private List<Installment> installments = new ArrayList<>();
-	
 
-	public Contract() {
-	}
+//	private   List<Installment>   installments   =   new ArrayList<>();
+//	   ↓              ↓               ↓                    ↓
+//	acesso       tipo da lista     variável         cria a lista
+
+	private List<Installment> installments = new ArrayList<>(); // Cria dentro de cada uma lista inicialmente vazia
+																// destinada a armazenar as parcelas pertencentes àquele
+																// contrato.
 
 	public Contract(Integer number, LocalDate date, Double tatolValue) {
 		this.number = number;
 		this.date = date;
 		this.tatolValue = tatolValue;
-		
+
 	}
 
 	public Integer getNumber() {
@@ -48,17 +50,8 @@ public class Contract {
 		this.tatolValue = tatolValue;
 	}
 
-
-
 	public List<Installment> getInstallments() {
 		return installments;
-	}
-
-	
-
-	@Override
-	public String toString() {
-		return "Cantract [number=" + number + ", Date=" + date + ", tatolValue=" + tatolValue;
 	}
 
 }
